@@ -30,7 +30,7 @@ requirements = [
 def _post_install():
     from qiskit_acqua_chemistry.preferences import Preferences
     preferences = Preferences()
-    preferences.add_package(Preferences.PACKAGE_TYPE_CHEMISTRY,'mock_chemistry_drivers')
+    preferences.add_package(Preferences.PACKAGE_TYPE_DRIVERS,'mock_chemistry_drivers')
     preferences.save()
     
 class CustomInstallCommand(install):
