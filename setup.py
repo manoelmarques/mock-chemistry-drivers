@@ -24,11 +24,11 @@ import atexit
 long_description="""Mock Chemistry Drivers"""
     
 requirements = [
-    "qiskit-acqua-chemistry>=0.1.1"
+    "qiskit-aqua-chemistry>=0.2.0"
 ]
 
 def _post_install():
-    from qiskit_acqua_chemistry.preferences import Preferences
+    from qiskit_aqua_chemistry.preferences import Preferences
     preferences = Preferences()
     preferences.add_package(Preferences.PACKAGE_TYPE_DRIVERS,'mock_chemistry_drivers')
     preferences.save()
@@ -55,8 +55,8 @@ setuptools.setup(
     description='Mock Chemistry Drivers',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/QISKit/qiskit-acqua-chemistry',
-    author='QISKit ACQUA Chemistry Development Team',
+    url='https://github.com/QISKit/qiskit-aqua-chemistry',
+    author='QISKit AQUA Chemistry Development Team',
     author_email='qiskit@us.ibm.com',
     license='Apache-2.0',
     classifiers=(
@@ -71,7 +71,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.6",
         "Topic :: Scientific/Engineering"
     ),
-    keywords='qiskit sdk quantum acqua chemistry',
+    keywords='qiskit sdk quantum aqua chemistry',
     packages=setuptools.find_packages(exclude=['test*']),
     install_requires=requirements,
     include_package_data=True,
