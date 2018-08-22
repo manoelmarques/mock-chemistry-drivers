@@ -55,8 +55,8 @@ setuptools.setup(
     description='Mock Chemistry Drivers',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/QISKit/qiskit-aqua-chemistry',
-    author='QISKit AQUA Chemistry Development Team',
+    url='https://github.com/QISKit/aqua-chemistry',
+    author='QISKit Aqua Chemistry Development Team',
     author_email='qiskit@us.ibm.com',
     license='Apache-2.0',
     classifiers=(
