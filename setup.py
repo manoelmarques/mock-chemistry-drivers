@@ -24,7 +24,7 @@ import atexit
 long_description="""Mock Chemistry Drivers"""
     
 requirements = [
-    "qiskit-aqua-chemistry>=0.2.0"
+    "qiskit-aqua-chemistry>=0.4.0"
 ]
 
 def _post_install():

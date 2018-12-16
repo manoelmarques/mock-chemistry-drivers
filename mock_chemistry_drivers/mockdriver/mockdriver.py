@@ -18,17 +18,23 @@
 from qiskit_aqua_chemistry.drivers import BaseDriver
 from qiskit_aqua_chemistry import QMolecule
 
+
 class MockDriver(BaseDriver):
     """Mock driver."""
 
-    def __init__(self, configuration=None):
-        """
-        Args:
-            configuration (dict): driver configuration
-        """
-        super(MockDriver, self).__init__(configuration)
+    CONFIGURATION = {
+        "name": "MockDriver",
+        "description": "Mocke Chemistry Driver",
+        "input_schema": {
+            "$schema": "http://json-schema.org/schema#",
+            "id": "mockfriver_schema",
+            "type": "string",
+            "default": "Mock driver default input"
+        }
+    }
+
+    def __init__(self):
+        super().__init__()
 
     def run(self, section):
         return QMolecule()
-
-
