@@ -15,8 +15,8 @@
 # limitations under the License.
 # =============================================================================
 
-from qiskit_aqua_chemistry.drivers import BaseDriver
-from qiskit_aqua_chemistry import QMolecule
+from qiskit_chemistry.drivers import BaseDriver
+from qiskit_chemistry import QMolecule
 
 
 class MockDriver(BaseDriver):

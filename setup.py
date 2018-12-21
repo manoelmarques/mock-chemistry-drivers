@@ -28,7 +28,7 @@ requirements = [
 ]
 
 def _post_install():
-    from qiskit_aqua_chemistry.preferences import Preferences
+    from qiskit_chemistry.preferences import Preferences
     preferences = Preferences()
     preferences.add_package(Preferences.PACKAGE_TYPE_DRIVERS,'mock_chemistry_drivers')
     preferences.save()
