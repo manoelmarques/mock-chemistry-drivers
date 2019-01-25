@@ -1,1 +1,1 @@
-qiskit-chemistry>=0.4.1
+qiskit-chemistry>=0.4.3

@@ -20,7 +20,7 @@ import setuptools
 long_description = """Mock Chemistry Drivers"""
 
 requirements = [
-    "qiskit-chemistry>=0.4.1"
+    "qiskit-chemistry>=0.4.3"
 ]
 
 
